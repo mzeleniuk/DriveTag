@@ -1,0 +1,57 @@
+button {
+    background-color: #0060df;
+    border: 2px solid #0060df;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px 24px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color ease-in-out 200ms;
+}
+
+button:active, button:focus, button:hover {
+    background-color: #0250bb;
+}
+
+form {
+    padding: 20px 30px;
+}
+
+form .inputs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    position: relative;
+    width: 100%;
+    height: 48px;
+    background-color: #ffffff;
+    border: 1px solid rgba(12, 12, 13, 0.3);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: inherit;
+    padding: 0 11px 0 16px;
+    transition-duration: 200ms;
+    transition-property: border-color;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
+    border-color: #0a84ff;
+}
+
+input:hover {
+    border-color: rgba(12, 12, 13, 0.5);
+}
+
+@media (max-width: 768px) {
+    .inputs-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,77 @@
+.resource-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(63, 81, 181, 0.12);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(63, 81, 181);
+    border-radius: 4px;
+    padding: 20px;
+    color: rgb(63, 81, 181);
+}
+
+.resource-section img {
+    height: 48px;
+    margin-right: 20px;
+}
+
+#apple-messages {
+    background-color: rgba(75, 216, 101, 0.12);
+    border: 1px solid rgb(75, 216, 101);
+    color: rgb(75, 216, 101);
+}
+
+#email {
+    background-color: rgba(244, 67, 54, 0.12);
+    border: 1px solid rgb(244, 67, 54);
+    color: rgb(244, 67, 54);
+}
+
+#facebook-messenger {
+    background-color: rgba(161, 14, 235, 0.12);
+    border: 1px solid rgb(161, 14, 235);
+    color: rgb(161, 14, 235);
+}
+
+#instagram {
+    background-color: rgba(255, 81, 151, 0.12);
+    border: 1px solid rgb(255, 81, 151);
+    color: rgb(255, 81, 151);
+}
+
+#signal {
+    background-color: rgba(59, 69, 253, 0.12);
+    border: 1px solid rgb(59, 69, 253);
+    color: rgb(59, 69, 253);
+}
+
+#phone {
+    background-color: rgba(149, 149, 149, 0.12);
+    border: 1px solid rgb(149, 149, 149);
+    color: rgb(149, 149, 149);
+}
+
+#skype {
+    background-color: rgba(0, 120, 215, 0.12);
+    border: 1px solid rgb(0, 120, 215);
+    color: rgb(0, 120, 215);
+}
+
+#telegram {
+    background-color: rgba(0, 136, 204, 0.12);
+    border: 1px solid rgb(0, 136, 204);
+    color: rgb(0, 136, 204);
+}
+
+#viber {
+    background-color: rgba(115, 96, 242, 0.12);
+    border: 1px solid rgb(115, 96, 242);
+    color: rgb(115, 96, 242);
+}
+
+#whatsapp {
+    background-color: rgba(37, 211, 102, 0.12);
+    border: 1px solid rgb(37, 211, 102);
+    color: rgb(37, 211, 102);
+}
