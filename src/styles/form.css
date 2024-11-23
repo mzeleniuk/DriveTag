@@ -18,13 +18,6 @@ form {
     padding: 20px 30px;
 }
 
-form .inputs-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
 input {
     position: relative;
     width: 100%;
@@ -48,6 +41,13 @@ input:focus {
 
 input:hover {
     border-color: rgba(12, 12, 13, 0.5);
+}
+
+.inputs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
