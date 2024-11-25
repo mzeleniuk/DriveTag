@@ -15,6 +15,16 @@
 
 <body>
 <form action="/submit" class="zoom-in">
+    <div class="resource-section">
+        <img src="../../src/assets/headline-icon.png" alt="Headline" title="Headline">
+        <input aria-label="Headline" maxlength="100" placeholder="Headline" type="text">
+    </div>
+
+    <div class="resource-section">
+        <img src="../../src/assets/paragraph-icon.png" alt="Additional Info" title="Additional Info">
+        <textarea aria-label="Additional Info" rows="1" maxlength="500" placeholder="Additional Info"></textarea>
+    </div>
+
     <div class="inputs-grid">
         <div id="phone" class="resource-section">
             <img src="../../src/assets/phone-icon.png" alt="iMessage" title="Phone">
@@ -67,7 +77,7 @@
         </div>
     </div>
 
-    <button type="submit">Submit</button>
+    <button type="submit">Generate QR</button>
 </form>
 </body>
 </html>
