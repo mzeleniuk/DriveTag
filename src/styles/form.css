@@ -63,6 +63,18 @@ input:hover, textarea:hover {
     margin: 0;
 }
 
+#qrcode {
+    width: 500px;
+    height: 500px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgba(12, 12, 13, 0.3);
+    margin: 20px auto 0 auto;
+    padding: 20px 30px;
+}
+
 @media (max-width: 768px) {
     .inputs-grid {
         grid-template-columns: repeat(1, 1fr);
