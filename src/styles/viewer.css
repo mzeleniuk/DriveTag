@@ -1,0 +1,23 @@
+.viewer {
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.viewer .resource-section {
+    display: none;
+}
+
+.viewer .resource-section input {
+    cursor: default;
+}
+
+.viewer a.button {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .viewer {
+        padding: 20px;
+    }
+}

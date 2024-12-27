@@ -1,4 +1,4 @@
-button {
+a.button, button {
     background-color: #0060df;
     border: 2px solid #0060df;
     border-radius: 4px;
@@ -10,7 +10,7 @@ button {
     transition: background-color ease-in-out 200ms;
 }
 
-button:active, button:focus, button:hover {
+a.button:active, a.button:focus, a.button:hover, button:active, button:focus, button:hover {
     background-color: #0250bb;
 }
 
@@ -43,6 +43,10 @@ input, textarea {
     outline: none;
 }
 
+textarea {
+    height: auto;
+}
+
 input:focus, textarea:focus {
     box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
     border-color: #0a84ff;
@@ -50,6 +54,11 @@ input:focus, textarea:focus {
 
 input:hover, textarea:hover {
     border-color: rgba(12, 12, 13, 0.5);
+}
+
+input[disabled], textarea[disabled] {
+    background-color: #f9f9fb;
+    cursor: default;
 }
 
 .inputs-grid {
@@ -64,8 +73,10 @@ input:hover, textarea:hover {
 }
 
 #qrcode {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -76,6 +87,10 @@ input:hover, textarea:hover {
 }
 
 @media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
     .inputs-grid {
         grid-template-columns: repeat(1, 1fr);
     }

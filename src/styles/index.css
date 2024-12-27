@@ -1,6 +1,7 @@
 @import url("animations.css");
 @import url("form.css");
 @import url("resources.css");
+@import url("viewer.css");
 
 * {
     margin: 0;

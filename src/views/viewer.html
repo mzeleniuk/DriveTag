@@ -11,82 +11,83 @@
     <link rel="manifest" href="../../assets/site.webmanifest">
 
     <link rel="stylesheet" href="../styles/index.css">
-    <script charset="utf-8" defer
-            src="../lib/easy.qrcode.min.js" type="text/javascript"></script>
+    <script src="../../dist/viewer.js" type="application/javascript"></script>
 </head>
 
 <body>
-<form id="dataForm" class="zoom-in">
-    <div class="resource-section">
+<div class="viewer zoom-in">
+    <div id="headline" class="resource-section">
         <img alt="Headline" src="../../src/assets/headline-icon.png" title="Headline">
-        <input aria-label="Headline" maxlength="100" name="headline" placeholder="Headline" type="text">
+        <input aria-label="Headline" disabled="disabled" name="headline" placeholder="Headline"
+               type="text">
     </div>
 
-    <div class="resource-section">
+    <div id="additionalInfo" class="resource-section">
         <img alt="Additional Info" src="../../src/assets/paragraph-icon.png" title="Additional Info">
-        <textarea aria-label="Additional Info" maxlength="500" name="additionalInfo" placeholder="Additional Info"
-                  rows="1"></textarea>
+        <textarea aria-label="Additional Info" disabled="disabled" name="additionalInfo"
+                  placeholder="Additional Info" rows="3"></textarea>
     </div>
 
     <div class="inputs-grid">
         <div id="phone" class="resource-section">
             <img alt="Phone" src="../../src/assets/phone-icon.png" title="Phone">
-            <input aria-label="Phone" maxlength="20" name="phone" placeholder="Phone" type="tel">
+            <input aria-label="Phone" disabled="disabled" name="phone" placeholder="Phone" type="tel">
         </div>
 
         <div id="appleMessages" class="resource-section">
             <img alt="Apple Messages" src="../../src/assets/apple-messages-icon.png" title="Apple Messages">
-            <input aria-label="Apple Messages" maxlength="100" name="appleMessages" placeholder="Apple Messages"
+            <input aria-label="Apple Messages" disabled="disabled" name="appleMessages"
+                   placeholder="Apple Messages"
                    type="text">
         </div>
 
         <div id="facebookMessenger" class="resource-section">
             <img alt="Facebook Messenger" src="../../src/assets/facebook-messenger-icon.svg" title="Facebook Messenger">
-            <input aria-label="Facebook Messenger" maxlength="100" name="facebookMessenger"
+            <input aria-label="Facebook Messenger" disabled="disabled" name="facebookMessenger"
                    placeholder="Facebook Messenger" type="text">
         </div>
 
         <div id="instagram" class="resource-section">
             <img alt="Instagram" src="../../src/assets/instagram-icon.png" title="Instagram">
-            <input aria-label="Instagram" maxlength="100" name="instagram" placeholder="Instagram" type="text">
+            <input aria-label="Instagram" disabled="disabled" name="instagram" placeholder="Instagram"
+                   type="text">
         </div>
 
         <div id="signal" class="resource-section">
             <img alt="Signal" src="../../src/assets/signal-icon.png" title="Signal">
-            <input aria-label="Signal" maxlength="500" name="signal" placeholder="Signal" type="text">
+            <input aria-label="Signal" disabled="disabled" name="signal" placeholder="Signal"
+                   type="text">
         </div>
 
         <div id="skype" class="resource-section">
             <img alt="Skype" src="../../src/assets/skype-icon.svg" title="Skype">
-            <input aria-label="Skype" maxlength="100" name="skype" placeholder="Skype" type="text">
+            <input aria-label="Skype" disabled="disabled" name="skype" placeholder="Skype" type="text">
         </div>
 
         <div id="telegram" class="resource-section">
             <img alt="Telegram" src="../../src/assets/telegram-icon.png" title="Telegram">
-            <input aria-label="Telegram" maxlength="100" name="telegram" placeholder="Telegram" type="text">
+            <input aria-label="Telegram" disabled="disabled" name="telegram" placeholder="Telegram"
+                   type="text">
         </div>
 
         <div id="viber" class="resource-section">
             <img alt="Viber" src="../../src/assets/viber-purple-icon.png" title="Viber">
-            <input aria-label="Viber" maxlength="100" name="viber" placeholder="Viber" type="text">
+            <input aria-label="Viber" disabled="disabled" name="viber" placeholder="Viber" type="text">
         </div>
 
         <div id="whatsApp" class="resource-section">
             <img alt="WhatsApp" src="../../src/assets/whatsapp-icon.png" title="WhatsApp">
-            <input aria-label="WhatsApp" maxlength="100" name="whatsApp" placeholder="WhatsApp" type="text">
+            <input aria-label="WhatsApp" disabled="disabled" name="whatsApp" placeholder="WhatsApp"
+                   type="text">
         </div>
 
         <div id="email" class="resource-section">
             <img alt="Email" src="../../src/assets/email-icon.png" title="Email">
-            <input aria-label="Email" maxlength="100" name="email" placeholder="Email" type="email">
+            <input aria-label="Email" disabled="disabled" name="email" placeholder="Email" type="email">
         </div>
     </div>
 
-    <button type="submit">Generate QR</button>
-
-    <div id="qrcode"></div>
-</form>
-
-<script src="../../dist/form.js" type="application/javascript"></script>
+    <a class="button" href="form.html">Create a new Contacts card</a>
+</div>
 </body>
 </html>

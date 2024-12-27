@@ -19,7 +19,12 @@ if (formElement) {
                 titleHeight: 40,
                 width: 360,
                 onRenderingEnd: function (qrCodeOptions: { _element: { style: { display: string; }; }; }): void {
+                    const inputs: NodeListOf<HTMLInputElement> = document.querySelectorAll("input, textarea");
                     const submitButton: HTMLButtonElement | null = document.querySelector("button[type='submit']");
+
+                    inputs.forEach((input: HTMLInputElement): void => {
+                        input.disabled = true;
+                    });
 
                     qrCodeOptions._element.style.display = "flex";
                     if (submitButton) submitButton.style.display = "none";

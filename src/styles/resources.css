@@ -17,7 +17,7 @@
     margin-right: 20px;
 }
 
-#apple-messages {
+#appleMessages {
     background-color: rgba(75, 216, 101, 0.12);
     border: 1px solid rgb(75, 216, 101);
     color: rgb(75, 216, 101);
@@ -29,7 +29,7 @@
     color: rgb(244, 67, 54);
 }
 
-#facebook-messenger {
+#facebookMessenger {
     background-color: rgba(161, 14, 235, 0.12);
     border: 1px solid rgb(161, 14, 235);
     color: rgb(161, 14, 235);
@@ -71,7 +71,7 @@
     color: rgb(115, 96, 242);
 }
 
-#whatsapp {
+#whatsApp {
     background-color: rgba(37, 211, 102, 0.12);
     border: 1px solid rgb(37, 211, 102);
     color: rgb(37, 211, 102);
