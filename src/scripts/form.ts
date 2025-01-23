@@ -12,7 +12,7 @@ if (formElement) {
             const options: object = {
                 correctLevel: (<any>window).QRCode.CorrectLevel.L,
                 height: 360,
-                text: `${window.location.origin}?token=${btoa(JSON.stringify(formDataObject))}`,
+                text: `${window.location.origin}/DriveTag/index.html?token=${btoa(JSON.stringify(formDataObject))}`,
                 title: "Contact Me",
                 titleBackgroundColor: "transparent",
                 titleFont: "normal normal bold 36px Arial",
