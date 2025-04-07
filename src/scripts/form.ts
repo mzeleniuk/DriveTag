@@ -1,5 +1,15 @@
 const formElement: HTMLElement | null = document.getElementById("dataForm");
 
+function base64EncodeUnicode(string: string): string {
+    return btoa(
+        encodeURIComponent(string).replace(
+            /%([0-9A-F]{2})/g,
+            function toSolidBytes(_, p1: number | string) {
+                return String.fromCharCode("0x" + p1 as unknown as number);
+            })
+    );
+}
+
 if (formElement) {
     formElement.addEventListener("submit", function (event: SubmitEvent): void {
         event.preventDefault();
@@ -12,7 +22,7 @@ if (formElement) {
             const options: object = {
                 correctLevel: (<any>window).QRCode.CorrectLevel.L,
                 height: 360,
-                text: `${window.location.origin}/DriveTag/index.html?token=${btoa(JSON.stringify(formDataObject))}`,
+                text: `${window.location.origin}/DriveTag/index.html?token=${base64EncodeUnicode(JSON.stringify(formDataObject))}`,
                 title: "Contact Me",
                 titleBackgroundColor: "transparent",
                 titleFont: "normal normal bold 36px Arial",

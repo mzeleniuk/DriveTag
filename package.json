@@ -1,6 +1,6 @@
 {
   "name": "drive-tag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a digital shareable identity for car owners, which can be displayed via a QR code",
   "main": "dist/index.js",
   "scripts": {

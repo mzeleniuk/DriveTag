@@ -77,6 +77,8 @@ input[disabled], textarea[disabled] {
     height: 100%;
     max-width: 500px;
     max-height: 500px;
+    min-width: 500px;
+    min-height: 500px;
     display: none;
     align-items: center;
     justify-content: center;
@@ -93,5 +95,10 @@ input[disabled], textarea[disabled] {
 
     .inputs-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    #qrcode {
+        min-width: calc(100vw - 40px);
+        min-height: 100%;
     }
 }
